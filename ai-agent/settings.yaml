@@ -1,0 +1,32 @@
+# ===== vibecodingkurs avtopost sozlamalari =====
+# Kalitlar bu yerda EMAS — GitHub Secrets'da turadi.
+
+rubric: "Claude maslahatlar"
+rubric_hashtag: ""   # bo'sh = heshtegsiz
+
+# Toshkent vaqti bilan
+timezone: "Asia/Tashkent"
+publish_time: "19:45"      # kanalga chiqish vaqti
+preview_minutes: 10        # necha daqiqa oldin sizga ko'rsatiladi
+
+# Modellar (birinchisi ishlamasa, keyingisi sinaladi)
+text_models: ["gemini-3.8-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
+image_models: ["gemini-3.1-flash-image", "gemini-3-pro-image", "gemini-2.5-flash-image"]
+image_aspect_ratio: "4:5"
+
+# Audio: gemini (asosiy, o'zbek tilini qo'llaydi) yoki elevenlabs
+audio_provider: "gemini"
+tts_models: ["gemini-3.8-flash-tts", "gemini-3.8-flash-lite-tts", "gemini-2.5-flash-tts", "gemini-2.5-flash-preview-tts"]
+gemini_voice: "Orus"       # erkak, ishonchli ovoz. Boshqalar: Charon, Alnilam, Puck
+tts_style: "O'zbek tilida, sokin, o'ychan va ishonchli ohangda, shoshmasdan, gaplar orasida qisqa pauza bilan o'qing:"
+
+# ElevenLabs (zaxira — ELEVENLABS_API_KEY bo'lsa ishlatiladi)
+voice_id: "JBFqnCBsd6RMkjVDRZzb"
+tts_model: "eleven_v3"
+
+# Sifat nazorati
+qc_min_score: 8            # 10 ballik shkalada
+max_rewrites: 2
+caption_max_chars: 1000    # Telegram chegarasi 1024
+
+channel_signature: ""   # bo'sh bo'lsa: "👉 " + CHANNEL_ID
